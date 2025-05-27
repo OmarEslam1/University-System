@@ -1,0 +1,170 @@
+\documentclass[12pt]{article}
+\usepackage{enumitem}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage[document]{ragged2e}
+\usepackage{framed}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\graphicspath{ {/media/dorgham/Data/E-JUST/E-JUST/Logo} {../Diagrams}}
+\author{}
+\date{}
+
+
+
+
+
+\begin{document}
+	\thispagestyle{empty}
+	\begin{center}
+		
+		\includegraphics[scale=0.6]{logo}\\[0.5in]
+		\LARGE \textbf {CSE322 – Software Engineering}\\[0.4in]
+		\large \textbf {"Software Requirements Specification for a University Management System"}\\[0.9in]
+
+
+		
+		\LARGE \textbf {Submitted by}\\[0.3in]
+		\LARGE
+		{\begin{tabular}{ c c c }
+				\textbf {Name} & & \textbf {ID}\\
+				Hassan Essam Hashem & & 120210068\\
+				Anas Osama Ali Dorgham & & 120210156 \\
+				Omar Eslam Abdelhamid & & 120210190
+			\end{tabular}\\[1.4in]
+		}		\LARGE \textbf {Submitted to}\\[0.2in]
+		\huge \textbf {Prof. Ehab Elshazly}
+	\end{center}
+	
+	\newpage
+	
+	\pagenumbering{roman}
+	\setcounter{page}{2} 
+	\large
+	{\tableofcontents}
+	\newpage
+	\pagenumbering{arabic}
+	\setcounter{page}{3}
+	
+	\section{SRS}
+	
+	\subsection{Introduction}
+	
+	The University System is a software application designed to facilitate various administrative and academic processes within a university. This document outlines the requirements for the system, including its purpose, scope, actors, and references.
+	
+	\subsubsection{Purpose}
+	The purpose of the University System is to control and automate university operations, including student enrollment, course management, faculty administration, grade tracking, and other related tasks. The system aims to enhance efficiency, accuracy, and accessibility in managing university processes.
+	
+	\subsubsection{Scope}
+	The goal of our system is to implement a stable and reliable system for student registration management, course scheduling and registration, faculty administration, assessment, and grading for university courses. The system will be accessible to students, instructors, administrators, and other authorized personnel.
+	
+	\subsubsection{Actors}
+	The following actors interact with the University System:
+	\begin{itemize}
+		\item Instructors
+		\item Students
+		\item System Administrator
+	\end{itemize}
+	
+	\subsection{Overall Description}
+	
+	\subsubsection{Product Perspective}
+	The University System will serve as a centralized platform that integrates with existing university information systems, such as student information systems, learning management systems, and financial systems. It will ensure accuracy of information across various university processes.
+	
+	\subsubsection{Product Functions}
+	The University System will provide the following key functions:
+	\begin{itemize}
+		\item \textbf{Student Management:} Register students, manage personal information, track academic progress, and generate official transcripts.
+		\item \textbf{Course Management:} Create and manage courses, schedule classes, assign instructors, and track course enrollment.
+		\item \textbf{Faculty Administration:} Maintain faculty profiles, assign courses, manage workload, and facilitate communication with students.
+		\item \textbf{Administration Management:} Manage financial data and resource allocation.
+		\item \textbf{Grading:} Record and calculate grades, generate progress reports, and provide academic feedback.
+	\end{itemize}
+	
+	\subsubsection{User Characteristics}
+	The users of the University System include students, faculty members, and administrators. Users are expected to be familiar with using web-based applications. Training and user support will be provided to ensure the efficiency of the system.
+	
+	\subsubsection{Constraints}
+	Issues that will limit the options available to the developers:
+	\begin{itemize}
+		\item The growing number of users, courses, and academic programs means our system must be scalable.
+		\item The system must be reliable and continue working even in the event of failures.
+		\item The system must protect university data and ensure consistency.
+		\item There must be a backup mechanism for unexpected events.
+	\end{itemize}
+	
+	\subsubsection{Assumptions and Dependencies}
+	Our project could be affected if these assumptions are incorrect, so the University System must assume the following:
+	\begin{itemize}
+		\item Availability of servers, network connectivity, and backup systems.
+		\item Collaboration with university stakeholders for data collection, integration, and system testing.
+		\item Provision of training and support for users during the transition to the new system.
+	\end{itemize}
+	
+	\subsection{System Requirement Specification}
+	
+
+	
+		
+		\subsubsection{Functional and Non-Functional Requirements}
+		\begin{center}
+			\normalsize
+			{\begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
+					\hline
+					\textbf{Functional Requirements} & \textbf{Non-Functional Requirements} \\
+					\hline
+					- Student registration and enrollment management. & - \textbf{Usability:} The system should have an intuitive and user-friendly interface. \\[0.1in]
+					
+					- Course creation, scheduling, and management. & - \textbf{Security:} The system must ensure data protection. \\[0.1in]
+					
+					- Faculty profile management and course assignment. & - \textbf{Performance:} The system should provide fast response times. \\[0.1in]
+					
+					- Grade recording, calculation, and reporting. & - \textbf{Scalability:} The system should be able to handle increased user load and data volume as the university grows. \\[0.1in]
+					
+					- Academic advising and degree planning support. & \\[0.1in]
+					\hline
+			\end{tabular}}
+		\end{center}
+		
+		
+	
+	\subsubsection{Domain and Other Requirements}
+	The University System shall adhere to the following domain and other requirements:
+	\begin{itemize}
+		\item Compliance with relevant legal and regulatory guidelines, including data protection and privacy laws.
+		\item Integration with existing university systems, such as student information systems and learning management systems.
+		\item Support for multiple user languages, if required.
+		\item Compatibility with popular web browsers and mobile devices.
+	\end{itemize}
+
+\section{Design Specification Document}
+	\subsection{Use Case Diagram}
+		\begin{center}
+			\includegraphics[scale=0.32]{Use Case}\\[0.5in]
+		\end{center}
+		\subsection{Activity Diagrams}
+			\subsubsection{Admin Activity Diagram}
+				\vspace{4cm}
+				\begin{center}
+					\includegraphics[scale=0.55]{Activity Diagram_Admin}\\[0.5in]
+				\end{center}
+	
+			\subsubsection{Student Activity Diagram}
+			\vspace{4cm}
+			\begin{center}
+				\includegraphics[scale=0.55]{Activity Diagram_Student}\\[0.5in]
+			\end{center}
+			\subsubsection{Instructor Activity Diagram}
+			\vspace{4cm}
+			\begin{center}
+				\includegraphics[scale=0.55]{Activity Diagram_Instructor}\\[0.5in]
+			\end{center}
+			
+
+	\subsection{Class Diagram}
+	\vspace{4cm}
+	\begin{center}
+		\includegraphics[scale=0.25]{class}\\[0.5in]
+	\end{center}
+\end{document}
