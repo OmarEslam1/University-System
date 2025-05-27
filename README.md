@@ -1,77 +1,99 @@
-University Management System - Software Requirements Specification (SRS)
-Overview
-This repository contains the Software Requirements Specification (SRS) document for the University Management System, a software application designed to streamline administrative and academic processes within a university. The system automates tasks such as student enrollment, course management, faculty administration, grade tracking, and more, aiming to enhance efficiency, accuracy, and accessibility.
-The SRS document was prepared as part of the CSE322 - Software Engineering course and submitted by:
+# University Management System
 
-Hassan Essam Hashem (ID: 120210068)
-Anas Osama Ali Dorgham (ID: 120210156)
-Omar Eslam Abdelhamid (ID: 120210190)
+## Overview
 
-Supervisor: Prof. Ehab Elshazly
-Purpose
-The University Management System aims to provide a centralized platform to manage university operations, including:
+The **University Management System** is a comprehensive software solution developed to automate and manage various administrative and academic operations within a university setting. It supports functionalities such as student enrollment, course scheduling, faculty management, and grade tracking.
 
-Student registration and academic progress tracking
-Course creation, scheduling, and enrollment
-Faculty profile management and course assignments
-Grading and academic feedback
-Administrative tasks such as financial data and resource allocation
+## Authors
 
-This SRS outlines the system's purpose, scope, actors, functional and non-functional requirements, and design specifications to guide its development.
-Document Structure
-The SRS document (Report.pdf) is organized into the following key sections:
+- Hassan Essam Hashem – 120210068  
+- Anas Osama Ali Dorgham – 120210156  
+- Omar Eslam Abdelhamid – 120210190  
 
-Introduction
+Submitted to: Prof. Ehab Elshazly  
+Course: CSE322 – Software Engineering
 
-Purpose: Describes the objectives of the University Management System.
-Scope: Defines the system's goals and functionalities.
-Actors: Lists the primary users (Students, Instructors, System Administrators).
+## Table of Contents
 
+- [Purpose](#purpose)  
+- [Scope](#scope)  
+- [Actors](#actors)  
+- [Product Features](#product-features)  
+- [User Characteristics](#user-characteristics)  
+- [System Constraints](#system-constraints)  
+- [Assumptions and Dependencies](#assumptions-and-dependencies)  
+- [Requirements](#requirements)
 
-Overall Description
+---
 
-Product Perspective: Explains how the system integrates with existing university systems.
-Product Functions: Details key functionalities such as student management, course management, and grading.
-User Characteristics: Describes the expected user base and their familiarity with web-based applications.
-Constraints: Highlights scalability, reliability, and data protection requirements.
-Assumptions and Dependencies: Lists assumptions like server availability and stakeholder collaboration.
+## Purpose
 
+To enhance the efficiency, accuracy, and accessibility of university operations by automating core functions such as:
 
-System Requirement Specification
+- Student registration
+- Course scheduling
+- Faculty administration
+- Grade tracking
 
-Functional and Non-Functional Requirements: Outlines features like student enrollment and performance metrics like usability and security.
-Domain and Other Requirements: Covers compliance, integration, and compatibility requirements.
+## Scope
 
+This system provides a centralized platform accessible by students, instructors, and administrators. It integrates with existing university systems to manage registrations, courses, assessments, and grading.
 
-Design Specification Document
+## Actors
 
-Use Case Diagram: Illustrates interactions between actors and the system.
-Activity Diagrams: Details workflows for Admins, Students, and Instructors.
-Class Diagram: Represents the system's data structure.
+- Students  
+- Instructors  
+- System Administrators  
 
+## Product Features
 
+- **Student Management:** Registration, personal info, academic progress, transcripts  
+- **Course Management:** Course creation, class scheduling, enrollment  
+- **Faculty Administration:** Profile management, course assignments, communication tools  
+- **Administrative Management:** Financial data handling, resource allocation  
+- **Grading System:** Grade entry, calculation, progress reports  
 
-How to Use This Document
+## User Characteristics
 
-Access the SRS: Open the Report.pdf file to review the detailed requirements and design specifications.
-Navigate Sections: Use the table of contents on page 2 to jump to specific sections.
-Review Diagrams: Refer to pages 6–10 for visual representations (Use Case, Activity, and Class Diagrams).
-Understand Requirements: Check page 5 for a comprehensive list of functional and non-functional requirements.
+Users are expected to have basic familiarity with web-based applications. Training and support will be provided.
 
-Prerequisites
-To understand the SRS, familiarity with the following is recommended:
+## System Constraints
 
-Basic concepts of software engineering and system design.
-Understanding of university administrative and academic processes.
-Knowledge of UML diagrams (Use Case, Activity, and Class Diagrams).
+- Must be **scalable**, **reliable**, and **secure**
+- Include a robust **backup mechanism**
+- Protect data consistency and availability
 
-Contact
-For questions or clarifications regarding the SRS, please contact the project team:
+## Assumptions and Dependencies
 
-Hassan Essam Hashem
-Anas Osama Ali Dorgham
-Omar Eslam Abdelhamid
+- Reliable server and network infrastructure  
+- Stakeholder cooperation for data integration  
+- User training and transition support
 
-Alternatively, reach out to the course supervisor, Prof. Ehab Elshazly.
-License
-This document is intended for academic purposes as part of the CSE322 - Software Engineering course. Unauthorized distribution or modification is prohibited.
+## Requirements
+
+### Functional
+
+- Student enrollment
+- Course and faculty management
+- Grade processing
+- Academic advising
+
+### Non-Functional
+
+- **Usability:** Intuitive interface  
+- **Security:** Data protection  
+- **Performance:** Fast response  
+- **Scalability:** Supports growth
+
+### Domain-Specific
+
+- Legal compliance (data protection laws)
+- Integration with university systems
+- Multi-language support (optional)
+- Cross-browser and mobile compatibility
+
+---
+
+## Documentation
+
+- [SRS and Design Diagrams](./Report.pdf)
